@@ -56,3 +56,13 @@ var maxValue = arr.reduce((max, curr)=> {
 },0);
 
 console.log(maxValue);
+
+//coockies
+document.cookie="cookiename='stacky';expires=Thu, 18 Dec 2013 12:00:00 UTC; path=/";
+
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('./service-worker').then(res => console.log("hello service"))
+  });
+}
+
