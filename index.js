@@ -1,10 +1,14 @@
 // Import stylesheets
 import './style.css';
 import './closure.js'
+import './call-aplly-bind.js'
 
 // Write Javascript code!
 const appDiv = document.getElementById('app');
 appDiv.innerHTML = `<h1>JS Starter</h1>`;
+
+const outputdiv = document.getElementById('result');
+outputdiv.innerHTML = `<h1>JS Starter</h1>`;
 console.log("hello from closure function");
 
 var arr = [10,20, 30, 50, 40];
