@@ -33,13 +33,35 @@
         document.cookie = "username=John Smith; expires=Thu, 18 Dec 2013
         12:00:00 UTC; path=/";
       </li>
-      <li>service worker: this used as a proxy between web browser and server. it aims to improve performance by downloading files online. there are few steps to implement </li>
-      1. Create a -new service worker file. <br>
-      2. resgister the service worker using navigator<br>
-      3. then install using eventListner<br>
-      4. then activate <br>
-      5. 
-      <li>web worker</li>
+      <li>
+        service worker: this used as a proxy between web browser and server. it
+        aims to improve performance by downloading files online. there are few
+        steps to implement
+      </li>
+      1. Create a -new service worker file.
+      <br />
+      2. resgister the service worker using navigator<br />
+      3. then install using eventListner<br />
+      4. then activate
+      <br />
+      5.
+      <li>
+        web worker: in javascript everything run on single thread. SO web workes
+        used to run script in background to perform complication task without
+        any interfierence to UI. Below are some web worker methods 1. using
+        worker constructor we can set a web worker . worker = new Worker(); 2.
+        use worker.onmessage() to fetch post data. 3. use postMessage() to post
+        data.
+
+        <p>Count numbers: <output id="result"></output></p>
+        <button onclick="startWorker()">Start Worker</button>
+        <button onclick="stopWorker()">Stop Worker</button>
+
+        <p>
+          <strong>Note:</strong> Internet Explorer 9 and earlier versions do not
+          support Web Workers.
+        </p>
+      </li>
     </ul>
   </li>
 

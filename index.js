@@ -66,3 +66,19 @@ if ('serviceWorker' in navigator) {
   });
 }
 
+//web worker
+function startWorker () {
+  if (typeof('Worker') != undefined) {
+    var newWorker = new Worker();
+    newWorker.onmessage((event) => {
+      console.log(event.data)
+      //document.getElementById('result').innerHTML = 
+    })
+  }
+}
+
+function stopWorker() {
+  newWorker.terminate();
+}
+
+
