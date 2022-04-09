@@ -156,7 +156,17 @@
       let abc= function abc {console.log('function expression')}
     </code>
     <li>higher order function</li>
-    <li>Pure Function: with given the same input, it always return the same output, without side effect</li>
+    <li>Pure Function: with given the same input, it always return the same output, without side effect. examples are below</li>
+    <code>
+      //pure function <br>
+      function (name) {return name}; //it takes input and sent output with no side effect (meanns we are not aritting anything which is not relevent to this function). <br>
+      
+      //impure function <br>
+     var a = 10; <br>
+     function printname() {<br>
+       console.log(a) // it is taking value from global scope so this is a impure function <br>
+    }
+    </code>
   </ul>
   <li>object, prototypal inheritence</li>
 </ul>
