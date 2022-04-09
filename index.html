@@ -84,13 +84,66 @@
   <li>foor each and for</li>
   <li>garbage collection</li>
   <li>events and event handling</li>
-  <li>error handling</li>
+  <li>error handling</li> 
   <li>different factor bet es5 and es6</li>
   <li>dom manipulation</li>
   <li>Asynch programing:</li>
   <ul>
     <li>EVENT LOOP</li>
-    <li>MACRO</li>
+    <ul>
+      <li>Event Loop is a endless process, where javascript engine waits for task and execute them and wait for more task. The priority give to Micro task queue. All the callBack funtions in javascript moved to callback queue</li>
+      
+      <li>MACRO: it has 2nd prioority on call back stack example: setTimeout, setInterval, setImmediate, requestAnimationFrame, I/O, UI rendering</li>
+      <li>Micro task: it has first priority. Example: promies, mutation observer</li>
+      <code>
+      console.log('script start');  <br>
+      setTimeout(function () {   <br>
+        console.log('setTimeout')} <br>
+        )
+      Promise.resolve() . <br>
+      then(function () { console.log('promise1'); }) ;  <br>
+
+      console.log('script end'); <br>
+
+      output console: script start, script end, promise1, setTimeout
+      </code>
+      <br>
+      <code>
+      console.log(1); <br>
+      // The first line executes immediately, it outputs `1`. <br>
+      // Macrotask and microtask queues are empty, as of now. <br>
+      
+      setTimeout(() => console.log(2));  <br>
+      // `setTimeout` appends the callback to the macrotask queue.  <br>
+      // - macrotask queue content:
+      //   `console.log(2)`
+      
+      Promise.resolve().then(() => console.log(3));  <br>
+      // The callback is appended to the microtask queue. <br>
+      // - microtask queue content: <br>
+      //   `console.log(3)` <br>
+      
+      Promise.resolve().then(() => setTimeout(() => console.log(4))); <br>
+      // The callback with `setTimeout(...4)` is appended to microtasks  <br>
+      // - microtask queue content: <br>
+      //   `console.log(3); setTimeout(...4)` <br>
+      
+      Promise.resolve().then(() => console.log(5)); <br>
+      // The callback is appended to the microtask queue <br>
+      // - microtask queue content:
+      //   `console.log(3); setTimeout(...4); console.log(5)` <br>
+      
+      setTimeout(() => console.log(6)); <br>
+      // `setTimeout` appends the callback to macrotasks <br>
+      // - macrotask queue content: <br>
+      //   `console.log(2); console.log(6)` <br>
+      
+      console.log(7); <br>
+      // Outputs 7 immediately.
+      </code>
+    </ul>
+
+    <li></li>
     <li>Micro task</li>
   </ul>
   <li>function</li>
