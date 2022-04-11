@@ -1,10 +1,10 @@
 // Import stylesheets
 import './style.css';
-import './closure.js';
-import './call-aplly-bind.js';
-import './fucntion.js';
-import './prototype.js';
-import './promies.js'
+// import './closure.js';
+// import './call-aplly-bind.js';
+// import './fucntion.js';
+// import './prototype.js';
+// import './promies.js'
 
 // Write Javascript code!
 const appDiv = document.getElementById('app');
@@ -66,6 +66,53 @@ var maxValue = arr.reduce((max, curr) => {
 }, 0);
 
 console.log(maxValue);
+
+//dom manipulation
+//document getElementById
+// console.log(document.getElementsByClassName('title'));
+// var title  = document.getElementsByClassName('title');
+// console.log(title);
+
+// for (var i = 0; i < title.length ; i++) {
+//   console.log(title[i].innerHTML);
+//   console.log(title[i].innerText); // it will only return heading tag text
+//   console.log(title[i].textContent); // it will return with span also
+//   title[i].innerHTML = "<span>Dom Tree Title</span>"
+//   title[i].style.color = "Red";
+// }
+
+// getElementByTagName
+// var liTag = document.getElementsByTagName('h4')
+// console.log(liTag);
+// for (var i = 0; i < liTag.length ; i++) {
+//   console.log(liTag[i].innerHTML);
+//   console.log(liTag[i].innerText); // it will only return heading tag text
+//   console.log(liTag[i].textContent); // it will return with span also
+//   liTag[i].innerHTML = "<span>Dom Tree Title</span>"
+//   liTag[i].style.color = "Red";
+// }
+
+//querySelector: it will return the one Element
+// var qs = document.querySelector('.list-group-item')
+// console.log(qs);
+// qs.innerHTML = 'helloq';
+
+//quesrySelectorAll
+
+var odd = document.querySelectorAll('.list-group-item:nth-child(odd)');
+var even = document.querySelectorAll('.list-group-item:nth-child(even)');
+console.log(odd);
+
+for (var a = 0; a < odd.length;a++){
+  odd[a].style.backgroundColor = 'grey';
+  odd[a].style.color = 'white';
+
+  even[a].style.backgroundColor = 'lightgrey';
+  even[a].style.color = 'black';
+
+}
+document.getElementById('inputText').value = 'subrat bhola';
+
 
 //coockies
 document.cookie =

@@ -1,3 +1,9 @@
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+  crossorigin="anonymous"
+/>
 <div id="app"></div>
 <ul>
   <li>Request cycle, atomic design, design systems</li>
@@ -84,123 +90,166 @@
   <li>foor each and for</li>
   <li>garbage collection</li>
   <li>events and event handling</li>
-  <li>error handling</li> 
+  <li>error handling</li>
   <li>different factor bet es5 and es6</li>
   <li>dom manipulation</li>
   <li>Asynch programing:</li>
   <ul>
     <li>EVENT LOOP</li>
     <ul>
-      <li>Event Loop is a endless process, where javascript engine waits for task and execute them and wait for more task. The priority give to Micro task queue. All the callBack funtions in javascript moved to callback queue</li>
-      
-      <li>MACRO: it has 2nd prioority on call back stack example: setTimeout, setInterval, setImmediate, requestAnimationFrame, I/O, UI rendering</li>
-      <li>Micro task: it has first priority. Example: promies, mutation observer</li>
+      <li>
+        Event Loop is a endless process, where javascript engine waits for task
+        and execute them and wait for more task. The priority give to Micro task
+        queue. All the callBack funtions in javascript moved to callback queue
+      </li>
+
+      <li>
+        MACRO: it has 2nd prioority on call back stack example: setTimeout,
+        setInterval, setImmediate, requestAnimationFrame, I/O, UI rendering
+      </li>
+      <li>
+        Micro task: it has first priority. Example: promies, mutation observer
+      </li>
       <code>
-      console.log('script start');  <br>
-      setTimeout(function () {   <br>
-        console.log('setTimeout')} <br>
-        )
-      Promise.resolve() . <br>
-      then(function () { console.log('promise1'); }) ;  <br>
+        console.log('script start'); <br />
+        setTimeout(function () { <br />
+        console.log('setTimeout')} <br />
+        ) Promise.resolve() . <br />
+        then(function () { console.log('promise1'); }) ; <br />
 
-      console.log('script end'); <br>
+        console.log('script end'); <br />
 
-      output console: script start, script end, promise1, setTimeout
+        output console: script start, script end, promise1, setTimeout
       </code>
-      <br>
+      <br />
       <code>
-      console.log(1); <br>
-      // The first line executes immediately, it outputs `1`. <br>
-      // Macrotask and microtask queues are empty, as of now. <br>
-      
-      setTimeout(() => console.log(2));  <br>
-      // `setTimeout` appends the callback to the macrotask queue.  <br>
-      // - macrotask queue content:
-      //   `console.log(2)`
-      
-      Promise.resolve().then(() => console.log(3));  <br>
-      // The callback is appended to the microtask queue. <br>
-      // - microtask queue content: <br>
-      //   `console.log(3)` <br>
-      
-      Promise.resolve().then(() => setTimeout(() => console.log(4))); <br>
-      // The callback with `setTimeout(...4)` is appended to microtasks  <br>
-      // - microtask queue content: <br>
-      //   `console.log(3); setTimeout(...4)` <br>
-      
-      Promise.resolve().then(() => console.log(5)); <br>
-      // The callback is appended to the microtask queue <br>
-      // - microtask queue content:
-      //   `console.log(3); setTimeout(...4); console.log(5)` <br>
-      
-      setTimeout(() => console.log(6)); <br>
-      // `setTimeout` appends the callback to macrotasks <br>
-      // - macrotask queue content: <br>
-      //   `console.log(2); console.log(6)` <br>
-      
-      console.log(7); <br>
-      // Outputs 7 immediately.
+        console.log(1); <br />
+        // The first line executes immediately, it outputs `1`. <br />
+        // Macrotask and microtask queues are empty, as of now. <br />
+
+        setTimeout(() => console.log(2)); <br />
+        // `setTimeout` appends the callback to the macrotask queue. <br />
+        // - macrotask queue content: // `console.log(2)`
+        Promise.resolve().then(() => console.log(3)); <br />
+        // The callback is appended to the microtask queue. <br />
+        // - microtask queue content: <br />
+        // `console.log(3)` <br />
+
+        Promise.resolve().then(() => setTimeout(() => console.log(4))); <br />
+        // The callback with `setTimeout(...4)` is appended to microtasks <br />
+        // - microtask queue content: <br />
+        // `console.log(3); setTimeout(...4)` <br />
+
+        Promise.resolve().then(() => console.log(5)); <br />
+        // The callback is appended to the microtask queue <br />
+        // - microtask queue content: // `console.log(3); setTimeout(...4);
+        console.log(5)` <br />
+
+        setTimeout(() => console.log(6)); <br />
+        // `setTimeout` appends the callback to macrotasks <br />
+        // - macrotask queue content: <br />
+        // `console.log(2); console.log(6)` <br />
+
+        console.log(7); <br />
+        // Outputs 7 immediately.
       </code>
     </ul>
   </ul>
   <li>function</li>
   <ul>
-    <li>Anonymous function: A function which dont have any name called Anonymous function</li>
-    <li>clouser: A function along with its lexical environment forms a clouser. A clouser always remember its place holder or from where it belongs to</li>
+    <li>
+      Anonymous function: A function which dont have any name called Anonymous
+      function
+    </li>
+    <li>
+      clouser: A function along with its lexical environment forms a clouser. A
+      clouser always remember its place holder or from where it belongs to
+    </li>
     <li>Purifying clouser</li>
-    <li>callBack(): When we send a function as a argument insite another fuction its called a callback function</li>
+    <li>
+      callBack(): When we send a function as a argument insite another fuction
+      its called a callback function
+    </li>
     <li>setTimeout()</li>
     <li>first class function</li>
     <li>composition compound function</li>
     <li>map/reduce/filter</li>
     <li>function immutability</li>
     <li>point free style</li>
+    <li>Difference bet arrow function and normal function</li>
+    <li>how to stop change the object value</li>
     <li>
-    FUnction Currying: When instead of sending all the parameter of a fucntion, we send first paramater then return a function then send 2 nd parameter and so on
- </li> 
+      FUnction Currying: When instead of sending all the parameter of a
+      fucntion, we send first paramater then return a function then send 2 nd
+      parameter and so on
+    </li>
     <li>function statement, function expresion</li>
     <code>
-     function abc() {console.log('function statement')} <br>
+      function abc() {console.log('function statement')} <br />
       let abc= function abc {console.log('function expression')}
     </code>
-    <li>higher order function: Higher order functions are the functions which return a function exm: map(), filter(),reduce()</li>
-    <li>Pure Function: with given the same input, it always return the same output, without side effect. examples are below</li>
+    <li>
+      higher order function: Higher order functions are the functions which
+      return a function exm: map(), filter(),reduce()
+    </li>
+    <li>
+      Pure Function: with given the same input, it always return the same
+      output, without side effect. examples are below
+    </li>
     <code>
-      //pure function <br>
-      function (name) {return name}; //it takes input and sent output with no side effect (meanns we are not aritting anything which is not relevent to this function). <br>
-      
-      //impure function <br>
-     var a = 10; <br>
-     function printname() {<br>
-       console.log(a) // it is taking value from global scope so this is a impure function <br>
-    }
+      //pure function <br />
+      function (name) {return name}; //it takes input and sent output with no
+      side effect (meanns we are not aritting anything which is not relevent to
+      this function). <br />
+
+      //impure function <br />
+      var a = 10; <br />
+      function printname() {<br />
+      console.log(a) // it is taking value from global scope so this is a impure
+      function <br />
+      }
     </code>
   </ul>
-  
-  <li>object prototype: every veriable function , array and object are bydefault added to object.prototype</li>
-   <li>prototypal inheritence:</li>
-   <li>promises</li>
-   <ul>
-    <li>Chaining promises: When we return a promies on every fullfiling or resolve promies we called as promies chaining</li>
-    <li>Promies.all: when there are array of promises which need to execute we can use promies.all, it will execute the promises in order . if it will any error in any promies it will terminate</li>
-    <li>Promies.race : when there are more then one promies to be executed, we can use promies.race. But it will only return the first executed promies value. other promises will be ignored</li>
+
+  <li>
+    object prototype: every veriable function , array and object are bydefault
+    added to object.prototype
+  </li>
+  <li>prototypal inheritence:</li>
+  <li>promises</li>
+  <ul>
+    <li>
+      Chaining promises: When we return a promies on every fullfiling or resolve
+      promies we called as promies chaining
+    </li>
+    <li>
+      Promies.all: when there are array of promises which need to execute we can
+      use promies.all, it will execute the promises in order . if it will any
+      error in any promies it will terminate
+    </li>
+    <li>
+      Promies.race : when there are more then one promies to be executed, we can
+      use promies.race. But it will only return the first executed promies
+      value. other promises will be ignored
+    </li>
     <li>error handling</li>
-    <li>asynch await: Asynch await makes promies easier to write. Asynch return a promies and await wait for the promies to fulfill</li>
+    <li>
+      asynch await: Asynch await makes promies easier to write. Asynch return a
+      promies and await wait for the promies to fulfill
+    </li>
   </ul>
-  <br>
-  <br>
+  <br />
+  <br />
   <li>Singletone</li>
   <li>Factory function</li>
   <li>modules, observables</li>
   <li>prototype, pbsub</li>
   <li>Common js, UMD, AMD</li>
   <li>Solid and Dry principle</li>
-  <li>PWA App manifest
-  </li>
+  <li>PWA App manifest</li>
   <li>Caching service workers</li>
   <li>Background sync , push notification</li>
   <li>Workbox</li>
-  
 </ul>
 
 <p>Count numbers: <output id="result"></output></p>
@@ -212,4 +261,27 @@
   Web Workers.
 </p>
 
-
+<h4 class="title">Add Items</h4>
+<div class="input-group mb-3">
+  <input
+    type="text"
+    class="form-control"
+    placeholder="Recipient's username"
+    aria-label="Recipient's username"
+    aria-describedby="basic-addon2"
+    id="inputText"
+  />
+  <div class="input-group-append">
+    <button type="button" class="btn btn-primary">Primary</button>
+  </div>
+</div>
+<h4 class="title">LIST</h4>
+<ul class="list-group">
+  <li class="list-group-item">item 1</li>
+  <li class="list-group-item">item 2</li>
+  <li class="list-group-item">item 3</li>
+  <li class="list-group-item">item 4</li>
+</ul>
+<h3>
+End of dom manipulation
+</h3>
