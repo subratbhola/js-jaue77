@@ -3,6 +3,7 @@ import './style.css';
 import './closure.js';
 import './call-aplly-bind.js';
 import './fucntion.js';
+import './prototype.js'
 
 // Write Javascript code!
 const appDiv = document.getElementById('app');
