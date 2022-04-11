@@ -38,6 +38,7 @@ const arrayofobject = [
   },
 ];
 
+
 var output = arr.map((x) => x * 2);
 
 var resuceOutput = arrayofobject.reduce(function (accu, curr) {
@@ -126,6 +127,8 @@ if ('serviceWorker' in navigator) {
   });
 }
 
+
+
 //web worker
 function startWorker() {
   if (typeof 'Worker' != undefined) {
@@ -140,3 +143,44 @@ function startWorker() {
 function stopWorker() {
   newWorker.terminate();
 }
+
+var clickEvent = document.getElementById('listadd');
+
+clickEvent.addEventListener('click',addList)
+
+function addList(e) {
+  console.log(e.target.id);
+  console.log(e.target.className);
+  var inputValue = document.getElementById('inputText').value;
+  console.log(inputValue);
+ var children= document.querySelector('.list-group').children;
+ console.log(children);
+ var li = document.createElement('li');
+ li.className = 'list-group-item';
+ li.innerText = inputValue;
+
+ console.log(li);
+//  document.querySelector('.list-group').appendChild(li);
+//  var children= document.querySelector('.list-group').children;
+ console.log(children);
+ var children1= document.querySelector('.list-group-item');
+ var container = document.getElementById('listGroup');
+ console.log(children1);
+ console.log(container);
+ container.insertBefore(li, children1);
+ var odd = document.querySelectorAll('.list-group-item:nth-child(odd)');
+var even = document.querySelectorAll('.list-group-item:nth-child(even)');
+console.log(odd);
+
+for (var a = 0; a < odd.length;a++){
+  odd[a].style.backgroundColor = 'grey';
+  odd[a].style.color = 'white';
+
+  even[a].style.backgroundColor = 'lightgrey';
+  even[a].style.color = 'black';
+
+}
+ 
+
+}
+console.log(clickEvent)
