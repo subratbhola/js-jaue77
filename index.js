@@ -172,14 +172,14 @@ function addList(e) {
 var even = document.querySelectorAll('.list-group-item:nth-child(even)');
 console.log(odd);
 
-for (var a = 0; a < odd.length;a++){
-  odd[a].style.backgroundColor = 'grey';
-  odd[a].style.color = 'white';
+// for (var a = 0; a < odd.length;a++){
+//   odd[a].style.backgroundColor = 'grey';
+//   odd[a].style.color = 'white';
 
-  even[a].style.backgroundColor = 'lightgrey';
-  even[a].style.color = 'black';
+//   even[a].style.backgroundColor = 'lightgrey';
+//   even[a].style.color = 'black';
 
-}
+// }
  
 
 }
