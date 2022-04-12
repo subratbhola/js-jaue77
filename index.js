@@ -5,7 +5,8 @@ import './style.css';
 // import './fucntion.js';
 // import './prototype.js';
 // import './promies.js'
-import './design-pattern/factory.js' 
+// import './design-pattern/factory.js' 
+import './design-pattern/single-tone.js' 
 
 // Write Javascript code!
 const appDiv = document.getElementById('app');
