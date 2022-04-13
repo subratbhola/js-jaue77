@@ -5,16 +5,16 @@ import './style.css';
 // import './fucntion.js';
 // import './prototype.js';
 // import './promies.js'
-// import './design-pattern/factory.js' 
-// import './design-pattern/single-tone.js' 
-import './indexdb.js'
+// import './design-pattern/factory.js'
+// import './design-pattern/single-tone.js'
+import './indexdb.js';
 
 // Write Javascript code!
 const appDiv = document.getElementById('app');
-appDiv.innerHTML = `<h1>JS Starter</h1>`;
+appDiv.innerHTML = `<h1>JS Interview Topic</h1>`;
 
 const outputdiv = document.getElementById('result');
-outputdiv.innerHTML = `<h1>JS Starter</h1>`;
+outputdiv.innerHTML = `<h1>JS Starter</h1><br><br>`;
 console.log('hello from closure function');
 
 var arr = [10, 20, 30, 50, 40];
@@ -40,7 +40,6 @@ const arrayofobject = [
     age: 26,
   },
 ];
-
 
 var output = arr.map((x) => x * 2);
 
@@ -107,16 +106,14 @@ var odd = document.querySelectorAll('.list-group-item:nth-child(odd)');
 var even = document.querySelectorAll('.list-group-item:nth-child(even)');
 console.log(odd);
 
-for (var a = 0; a < odd.length;a++){
+for (var a = 0; a < odd.length; a++) {
   odd[a].style.backgroundColor = 'grey';
   odd[a].style.color = 'white';
 
   even[a].style.backgroundColor = 'lightgrey';
   even[a].style.color = 'black';
-
 }
 document.getElementById('inputText').value = 'subrat bhola';
-
 
 //coockies
 document.cookie =
@@ -129,8 +126,6 @@ if ('serviceWorker' in navigator) {
       .then((res) => console.log('hello service'));
   });
 }
-
-
 
 //web worker
 function startWorker() {
@@ -149,41 +144,39 @@ function stopWorker() {
 
 var clickEvent = document.getElementById('listadd');
 
-clickEvent.addEventListener('click',addList)
+clickEvent.addEventListener('click', addList);
 
 function addList(e) {
   console.log(e.target.id);
   console.log(e.target.className);
   var inputValue = document.getElementById('inputText').value;
   console.log(inputValue);
- var children= document.querySelector('.list-group').children;
- console.log(children);
- var li = document.createElement('li');
- li.className = 'list-group-item';
- li.innerText = inputValue;
+  var children = document.querySelector('.list-group').children;
+  console.log(children);
+  var li = document.createElement('li');
+  li.className = 'list-group-item';
+  li.innerText = inputValue;
 
- console.log(li);
-//  document.querySelector('.list-group').appendChild(li);
-//  var children= document.querySelector('.list-group').children;
- console.log(children);
- var children1= document.querySelector('.list-group-item');
- var container = document.getElementById('listGroup');
- console.log(children1);
- console.log(container);
- container.insertBefore(li, children1);
- var odd = document.querySelectorAll('.list-group-item:nth-child(odd)');
-var even = document.querySelectorAll('.list-group-item:nth-child(even)');
-console.log(odd);
+  console.log(li);
+  //  document.querySelector('.list-group').appendChild(li);
+  //  var children= document.querySelector('.list-group').children;
+  console.log(children);
+  var children1 = document.querySelector('.list-group-item');
+  var container = document.getElementById('listGroup');
+  console.log(children1);
+  console.log(container);
+  container.insertBefore(li, children1);
+  var odd = document.querySelectorAll('.list-group-item:nth-child(odd)');
+  var even = document.querySelectorAll('.list-group-item:nth-child(even)');
+  console.log(odd);
 
-// for (var a = 0; a < odd.length;a++){
-//   odd[a].style.backgroundColor = 'grey';
-//   odd[a].style.color = 'white';
+  // for (var a = 0; a < odd.length;a++){
+  //   odd[a].style.backgroundColor = 'grey';
+  //   odd[a].style.color = 'white';
 
-//   even[a].style.backgroundColor = 'lightgrey';
-//   even[a].style.color = 'black';
+  //   even[a].style.backgroundColor = 'lightgrey';
+  //   even[a].style.color = 'black';
 
-// }
- 
-
+  // }
 }
-console.log(clickEvent)
+console.log(clickEvent);

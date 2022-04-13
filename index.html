@@ -96,7 +96,7 @@
   <li>dom manipulation✔</li>
   <li>Asynch programing: ✔</li>
   <ul>
-    <li>EVENT LOOP</li>
+    <li>EVENT LOOP ✔</li>
     <ul>
       <li>
         Event Loop is a endless process, where javascript engine waits for task
@@ -159,28 +159,28 @@
   <li>function ✔</li>
   <ul>
     <li>
-      Anonymous function: A function which dont have any name called Anonymous
+      Anonymous function ✔: A function which dont have any name called Anonymous
       function
     </li>
     <li>
-      clouser: A function along with its lexical environment forms a clouser. A
-      clouser always remember its place holder or from where it belongs to
+      clouser ✔: A function along with its lexical environment forms a clouser.
+      A clouser always remember its place holder or from where it belongs to
     </li>
     <li>Purifying clouser</li>
     <li>
-      callBack(): When we send a function as a argument insite another fuction
+      callBack() ✔: When we send a function as a argument insite another fuction
       its called a callback function
     </li>
-    <li>setTimeout()</li>
-    <li>first class function</li>
-    <li>composition compound function</li>
-    <li>map/reduce/filter</li>
-    <li>function immutability</li>
-    <li>point free style</li>
-    <li>Difference bet arrow function and normal function</li>
+    <li>setTimeout() ✔</li>
+    <li>first class function ✔</li>
+    <li>composition compound function ✔</li>
+    <li>map/reduce/filter ✔</li>
+    <li>function immutability ✔</li>
+    <li>point free style ✔</li>
+    <li>Difference bet arrow function and normal function ✔</li>
     <li>how to stop change the object value</li>
     <li>
-      FUnction Currying: When instead of sending all the parameter of a
+      FUnction Currying ✔: When instead of sending all the parameter of a
       fucntion, we send first paramater then return a function then send 2 nd
       parameter and so on
     </li>
@@ -251,7 +251,7 @@
   </li>
   <li>modules, observables ✔</li>
   <li>prototype, pbsub ✔</li>
-  <li>Common js, UMD, AMD</li>
+  <li>Common js, UMD, AMD ✔</li>
   <li>
     12 factory App: there are 12 software principle to maintain good pratices in
     coding ✔
@@ -289,44 +289,85 @@
     </li>
     <li>Dependency Inversion: means use loosely couple objects or functions</li>
   </ul>
-  <li>Dry principle (dont repeat yourself)  ✔</li>
+  <li>Dry principle (dont repeat yourself) ✔</li>
   <li>
     PWA App manifes ✔: PWA is used to save web application to offline mode.
     appmanifest is a config file which will have the name, icons, datastore.
     author and so on
   </li>
   <li>
-    Caching service workers  ✔: It use to install the app in application as an
+    Caching service workers ✔: It use to install the app in application as an
     native app
   </li>
-  <li>Background sync , push notification  ✔</li>
+  <li>Background sync , push notification ✔</li>
   <li>Workbox</li>
   <br />
   <br />
 
-  <li>compression  ✔: in javascript there are many tools to compress the files by removing extra space, making objects intread of array, one line statement, minifing js files.</li>
+  <li>
+    compression ✔: in javascript there are many tools to compress the files by
+    removing extra space, making objects intread of array, one line statement,
+    minifing js files.
+  </li>
   <ul>
     <li>uglify</li>
     <li>minify</li>
     <li>node-mini</li>
   </ul>
-  <li>caching/cdn(content delivery network)/expiration  ✔</li>
-  <li>http headers  ✔: we can create a http header in javascript by header= new Headers() and add javascript headers proporties using header.appendChild('propertyname', property value)</li>
+  <li>caching/cdn(content delivery network)/expiration ✔</li>
+  <li>
+    http headers ✔: we can create a http header in javascript by header= new
+    Headers() and add javascript headers proporties using
+    header.appendChild('propertyname', property value)
+  </li>
   <ul>
-  <li>content type</li>
-  <li>authentication</li>
-  <li>Authorization</li>
-
+    <li>content type</li>
+    <li>authentication</li>
+    <li>Authorization</li>
+    <li>Accept Language</li>
+    <li>content language</li>
   </ul>
-  <li>js profilling  ✔: is used to moniter site performance in google performance tool , sonarquobe</li>
+  <li>
+    js profilling ✔: is used to moniter site performance in google performance
+    tool , sonarquobe
+  </li>
   <li>http2</li>
   <li>universal view state</li>
-  <li>log monitering tool: there are many log moniter tools like splunk, loogle , wisden</li>
+  <li>
+    log monitering tool: there are many log moniter tools like splunk, loogle ,
+    wisden
+  </li>
   <li>SSL/TLS, CORS, XSS, CSRF, ACCESS , REFRESH TOKEN</li>
+  <ul>
+    <li>SSL/TLS: SSL (secure scoket layer) is used to securely communicate bet a site and a web server. This will helpfull when transfering safeguard the data and all </li>
+    <li>TLS: it is a updated and more secure version of SSL</li>
+    <li>CORS: it used to securely communicate to a backend server. It help us from evil hacker</li>
+    <li>XSS: cross site scripting prevention. like safehtml, output encoding</li>
+    <li>CSRF: CSRF tokens can mitigate CSRF attacks because without a token, the attacker cannot create valid requests which will be executed on the server.</li>
+    <li>Access Token / Refresh Token: Refresh Token are typically longer lived than Access Tokens and used to request a new Access Token without forcing user authentication. Unlike Access Tokens, Refresh Tokens are only used with the Authorization Server and are never sent to a web service.</li>
+  </ul>
   <li>product user data, RBAC, ABAC</li>
-  <li>GULP/ GRUNT. WEBPACK</li>
-  <li>Integration of plugin like sitespeed</li>
-  <li>A/AA/AAA accesebility guideline: these are some guide line first one A =>AA=> AAA  ✔</li>
+  <li>GULP/ GRUNT. WEBPACK ✔</li>
+  <ul>
+    <li>install grunt cli, grunt, grunt watch</li>
+    <li>
+      create a file with gruntfile.js name. export a function with
+      module.export(commonjs)
+    </li>
+    <li>
+      inside this export module import packages and then create task like
+      uglify, sitespeedio etc
+    </li>
+    <li>to run the task use grunt taskname</li>
+  </ul>
+  <li>
+    Integration of plugin like sitespeed ✔: we can use grunt to install the
+    plugin then load inside fruntfile.js and create task with sitespeedio name
+  </li>
+  <li>
+    A/AA/AAA accesebility guideline: these are some guide line first one A
+    =>AA=> AAA ✔
+  </li>
   <ul>
     <li>color contrast, text size</li>
     <li>form labels</li>
@@ -334,7 +375,12 @@
     <li>text facing</li>
     <li>timeout etc</li>
   </ul>
-  <li>git hook  ✔: There are different types of hooks in git which is used to check some validation b efore comitt, after comit, before push after push . inside .git folder we are having hooks we just need to rename files and remove .sample. If we want to skip the hooks we can give git push --no-verify </li>
+  <li>
+    git hook ✔: There are different types of hooks in git which is used to check
+    some validation b efore comitt, after comit, before push after push . inside
+    .git folder we are having hooks we just need to rename files and remove
+    .sample. If we want to skip the hooks we can give git push --no-verify
+  </li>
   <ul>
     <li>pre-commit</li>
     <li>post commit</li>
