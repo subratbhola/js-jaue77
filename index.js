@@ -6,7 +6,8 @@ import './style.css';
 // import './prototype.js';
 // import './promies.js'
 // import './design-pattern/factory.js' 
-import './design-pattern/single-tone.js' 
+// import './design-pattern/single-tone.js' 
+import './indexedDB.js'
 
 // Write Javascript code!
 const appDiv = document.getElementById('app');
