@@ -7,7 +7,7 @@ import './style.css';
 // import './promies.js'
 // import './design-pattern/factory.js' 
 // import './design-pattern/single-tone.js' 
-import './indexedDB.js'
+import './indexDB.js'
 
 // Write Javascript code!
 const appDiv = document.getElementById('app');
