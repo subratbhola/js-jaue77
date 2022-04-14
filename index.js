@@ -8,6 +8,7 @@ import './style.css';
 // import './design-pattern/factory.js'
 // import './design-pattern/single-tone.js'
 import './indexdb.js';
+import './map-filter-reduce.js'
 
 // Write Javascript code!
 const appDiv = document.getElementById('app');
@@ -180,3 +181,15 @@ function addList(e) {
   // }
 }
 console.log(clickEvent);
+
+let abc = [1,2,3];
+let b = [...abc] //immutable
+
+let obj1 = {
+  name:123,
+  age:234
+}
+
+let obj2 = Object.assign({}, obj1) //immutable
+
+
