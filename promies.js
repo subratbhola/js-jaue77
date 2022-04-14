@@ -39,9 +39,9 @@ async function asynchfunction() {
   return await myPromies;
 }
 
-let aysnjf = asynchfunction();
+asynchfunction().then(data => console.log(data));
 
-console.log(aysnjf);
+// console.log('hello'+aysnjf);
 
 //Promies chainning
 

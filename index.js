@@ -4,12 +4,12 @@ import './style.css';
 // import './call-aplly-bind.js';
 // import './fucntion.js';
 // import './prototype.js';
-// import './promies.js'
+import './promies.js'
 // import './design-pattern/factory.js'
 // import './design-pattern/single-tone.js'
-import './indexdb.js';
-import './map-filter-reduce.js'
-import './object-dest.js'
+// import './indexdb.js';
+// import './map-filter-reduce.js'
+// import './object-dest.js'
 
 // Write Javascript code!
 const appDiv = document.getElementById('app');
