@@ -61,6 +61,13 @@ console.log(output);
 console.log(resuceOutput);
 console.log(firstnames);
 
+var arr2 = [10, 20, 30, 50, 40,10];
+
+const dsfsdf = arr2.filter((x,index,arr3)=> {
+return  arr.indexOf(x) === index
+});
+console.log(dsfsdf)
+
 //maximum value of an array
 
 var maxValue = arr.reduce((max, curr) => {
