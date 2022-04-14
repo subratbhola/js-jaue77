@@ -9,6 +9,7 @@ import './style.css';
 // import './design-pattern/single-tone.js'
 import './indexdb.js';
 import './map-filter-reduce.js'
+import './object-dest.js'
 
 // Write Javascript code!
 const appDiv = document.getElementById('app');
