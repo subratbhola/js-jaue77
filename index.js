@@ -2,9 +2,9 @@
 import './style.css';
 // import './closure.js';
 // import './call-aplly-bind.js';
-// import './fucntion.js';
+import './fucntion.js';
 // import './prototype.js';
-import './promies.js'
+import './promies.js';
 // import './design-pattern/factory.js'
 // import './design-pattern/single-tone.js'
 // import './indexdb.js';
@@ -61,12 +61,12 @@ console.log(output);
 console.log(resuceOutput);
 console.log(firstnames);
 
-var arr2 = [10, 20, 30, 50, 40,10];
+var arr2 = [10, 20, 30, 50, 40, 10];
 
-const dsfsdf = arr2.filter((x,index,arr3)=> {
-return  arr.indexOf(x) === index
+const dsfsdf = arr2.filter((x, index, arr3) => {
+  return arr.indexOf(x) === index;
 });
-console.log(dsfsdf)
+console.log(dsfsdf);
 
 //maximum value of an array
 
@@ -190,14 +190,12 @@ function addList(e) {
 }
 console.log(clickEvent);
 
-let abc = [1,2,3];
-let b = [...abc] //immutable
+let abc = [1, 2, 3];
+let b = [...abc]; //immutable
 
 let obj1 = {
-  name:123,
-  age:234
-}
+  name: 123,
+  age: 234,
+};
 
-let obj2 = Object.assign({}, obj1) //immutable
-
-
+let obj2 = Object.assign({}, obj1); //immutable
