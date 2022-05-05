@@ -19,6 +19,14 @@ const outputdiv = document.getElementById('result');
 outputdiv.innerHTML = `<h1>JS Starter</h1><br><br>`;
 console.log('hello from closure function');
 
+function closureexm() {
+  console.log('clouser value '+ clouservalue);
+  console.log('clouser value '+ clouservalue1);
+}
+var clouservalue1 = '12';
+closureexm();
+var clouservalue = '12';
+
 var arr = [10, 20, 30, 50, 40];
 const arrayofobject = [
   {
