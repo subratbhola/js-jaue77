@@ -37,5 +37,5 @@ console.log(reudeobj)
 
 
 let arr = [1,2,2,3,4,5,5];
-  // const duplicate = arr.map((x)=> indexOf(x) >=0 )
-// console.log(duplicate)
+  const duplicate = arr.map((x)=> indexOf(x) >=0 )
+console.log('duplicate dfsdf'+duplicate)
