@@ -34,3 +34,14 @@ else {
 }
 
 console.log(output)
+
+// ==========remove duplicate ===========
+
+
+// ========== String Polindrom ===========
+
+let polivalue = 'heehe';
+
+if (polivalue.split('').reverse().join('') === polivalue){
+  console.log('polinfrom');
+} 
