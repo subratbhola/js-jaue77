@@ -38,6 +38,11 @@ console.log(output)
 // ==========remove duplicate ===========
 
 
+//=============Find duplicate element from a array=========
+var arr2 = [6,5,5,8,9,11,10,12,13,7,7,15];
+var items = []
+const duplicate = arr.filter((item, index)=> arr2.indexOf(item) !== index);
+console.log('duplicate'+duplicate);
 // ========== String Polindrom ===========
 
 let polivalue = 'heehe';
