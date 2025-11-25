@@ -11,6 +11,7 @@ import './occurence.js';
 // import './indexdb.js';
 // import './map-filter-reduce.js'
 // import './object-dest.js'
+import './Currying.js';
 
 // Write Javascript code!
 const appDiv = document.getElementById('app');
@@ -21,8 +22,8 @@ outputdiv.innerHTML = `<h1>JS Starter</h1><br><br>`;
 console.log('hello from closure function');
 
 function closureexm() {
-  console.log('clouser value '+ clouservalue);
-  console.log('clouser value '+ clouservalue1);
+  console.log('clouser value ' + clouservalue);
+  console.log('clouser value ' + clouservalue1);
 }
 var clouservalue1 = '12';
 closureexm();
