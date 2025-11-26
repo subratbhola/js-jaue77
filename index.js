@@ -12,6 +12,7 @@ import './occurence.js';
 // import './map-filter-reduce.js'
 // import './object-dest.js'
 import './Currying.js';
+import './polyfils.js';
 
 // Write Javascript code!
 const appDiv = document.getElementById('app');
