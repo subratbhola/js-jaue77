@@ -209,3 +209,13 @@ let obj1 = {
 };
 
 let obj2 = Object.assign({}, obj1); //immutable
+
+const nameObj = {a:1,b:2};
+console.log(nameObj.toString())
+
+function test() {
+  console.log(test.x)
+}
+test();
+test.x = 100;
+test()
