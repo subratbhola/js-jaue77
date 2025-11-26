@@ -39,7 +39,7 @@ Array.prototype.myMap = function (callback) {
   }
   const response = [];
   for (let i = 0; i < this.length; i++) {
-    response.push(callback(this[i]));
+    response.push(callback(this[i]), i, this);
   }
   return response;
 };
