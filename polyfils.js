@@ -32,7 +32,6 @@ console.log(arr.map((a) => a * 2));
 Array.prototype.myMap = function (callback) {
   // let arr = args;
   console.log(this);
-  console.log(callback);
   // 1️⃣ Type check
   if (typeof callback !== 'function') {
     throw new TypeError(callback + ' is not a function');
@@ -47,6 +46,20 @@ Array.prototype.myMap = function (callback) {
 function callBack(el) {
   return el * 2;
 }
+
+function filterCallBk(el) {
+  return el > 2
+}
+
+Array.prototype.myFilter = function (callback) {
+  const response = [];
+  for (let i = 0; i < this.length; i++) {
+    response.push(callback(this[i]), i, this);
+  }
+  return response;
+}
 const result = arr.myMap(callBack);
+const result1 = arr.myFilter(filterCallBk);
 console.log(result);
+console.log(result1);
 console.log('Polyfilss end');
