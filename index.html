@@ -187,7 +187,89 @@
         // Outputs 7 immediately.
       </code>
     </ul>
+    <li>Debouncing:
+      <ul>
+        <li>
+          Debouncing waits for a pause in events and triggers once after the
+          pause. Great for high-frequency events where you want the final, stable value.
+        </li>
+        <li>
+          Debounce is perfect for reducing API calls in input fields
+        </li>
+        <li>
+          Ideal For Search, resize, autocomplete
+        </li>
+        <li>
+          Common Use Cases <br>
+
+            Search input API calls
+
+            Window resize calculations
+
+            Form validation while typing
+
+            Auto-save after user stops writing
+        </li>
+        <li>
+          <code>
+            function debounce(func, wait) { <br />
+              let timeout; <br />
+              return function (...args) { <br />
+                const later = () => { <br />
+                  clearTimeout(timeout); <br />
+                  func.apply(this, args); <br />
+                }; <br />
+                clearTimeout(timeout); <br />
+                timeout = setTimeout(later, wait); <br />
+              }; <br />
+            } <br />
+          </code>
+        </li>
+      </ul>
+
+    </li>
+    <li>
+      Throttling:
+      <ul>
+        <li>
+          Throttling ensures a function is called at most once in a specified
+          time interval. Great for rate-limiting events that occur frequently.
+        </li>
+        <li>
+          Throttle is perfect for controlling event frequency
+        </li>
+        <li>
+          Ideal For Scroll, drag, resize
+        </li>
+        <li>
+          Common Use Cases <br />
+
+            Infinite scrolling data loads
+
+            Scroll-based animations
+
+            Drag-and-drop position updates
+
+            Window resize event handling
+        </li>
+        <li>
+          <code>
+            function throttle(func, limit) { <br />
+              let inThrottle; <br />
+              return function (...args) { <br />
+                if (!inThrottle) { <br />
+                  func.apply(this, args); <br />
+                  inThrottle = true; <br />
+                  setTimeout(() => (inThrottle = false), limit); <br />
+                } <br />
+              }; <br />
+            } <br />
+          </code>
+        </li>
+      </ul>
+    </li>
   </ul>
+  <br />
   <li>function</li>
   <ul>
     <li>
