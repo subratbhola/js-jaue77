@@ -2,18 +2,18 @@
 import './style.css';
 // import './closure.js';
 // import './call-aplly-bind.js';
-import './fucntion.js';
+// import './fucntion.js';
 // import './prototype.js';
 import './promies.js';
-import './occurence.js';
+// import './occurence.js';
 // import './design-pattern/factory.js'
 // import './design-pattern/single-tone.js'
 // import './indexdb.js';
 // import './map-filter-reduce.js'
 // import './object-dest.js'
-import './Currying.js';
+// import './Currying.js';
 import './polyfils.js';
-
+// 
 // Write Javascript code!
 const appDiv = document.getElementById('app');
 appDiv.innerHTML = `<h1>JS Interview Topic</h1>`;
